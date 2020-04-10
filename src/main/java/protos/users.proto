@@ -1,0 +1,23 @@
+syntax = "proto2";
+package users_proto;
+option java_package = "com.network.bbcb.net.proto";
+option java_outer_classname = "UsersProto";
+
+message WXLoginReq
+{
+    optional string code              = 1;//微信凭证
+}
+message UserInfo
+{
+    optional string token           = 1;//访问我方服务器的凭证
+    optional string uuid            = 2;//和token一起，用于验证登录合法性
+    optional string memberid        = 3;//会员号
+    optional string phonenumber     = 4;//电话号码，当为空的时候可以提醒或者在支付之前提示绑定
+}
+
+message WXLoginRsp
+{
+    optional uint32 code          = 1;//应答结果码
+    optional string msg           = 2;//应答结果提示信息
+    optional UserInfo data        = 3;//
+}
