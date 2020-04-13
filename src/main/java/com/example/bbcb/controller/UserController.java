@@ -2,24 +2,24 @@ package com.example.bbcb.controller;
 
 
 import com.example.bbcb.annotation.Fruit;
-import com.example.bbcb.dao.UserDao;
-import com.example.bbcb.entity.User;
 import com.example.bbcb.exception.BusinessExceptionStatusEnum;
 import com.example.bbcb.exception.CustomException;
-import com.example.bbcb.model.Result;
+import com.example.bbcb.vo.Result;
 import com.example.bbcb.service.User.UserInformation;
 import com.example.bbcb.service.User.UserLogin;
+import com.example.bbcb.vo.LoginReq;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 //import io.swagger.annotations.Api;
 //import io.swagger.annotations.ApiOperation;
 
 import javax.annotation.Resource;
-import java.util.List;
+import javax.validation.Valid;
 
 @Slf4j
-//@Api(value = "/user", description = "用户登陆、短信验证码")
+@Api(value = "/user", description = "用户登陆、短信验证码")
 @RestController
 @RequestMapping("/user")
 public class UserController {
@@ -58,5 +58,11 @@ public class UserController {
     public Result findUsers(@PathVariable(value = "uid") String uid) throws CustomException {
             log.info("uid:{}", uid);
             return userLogin.weChatLogin(uid);
+    }
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public Result login(@Validated @RequestBody LoginReq req) throws CustomException {
+        log.info("login:{}", req.toString());
+        return Result.successResult();
     }
 }
