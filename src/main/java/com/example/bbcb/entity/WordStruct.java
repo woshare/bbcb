@@ -1,4 +1,4 @@
-package com.example.bbcb.dto;
+package com.example.bbcb.entity;
 
 import java.util.List;
 

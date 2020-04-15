@@ -18,8 +18,7 @@ import java.text.SimpleDateFormat;
 public class LoginAspect {
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-    @Autowired
-    private UserDao userDao;
+
 
 
     @Pointcut("execution(public * com.example.bbcb.service.User.UserLogin.*(..))")//切入点描述

@@ -1,8 +1,7 @@
 package com.example.bbcb.dao;
 
-import com.example.bbcb.entity.User;
+import com.example.bbcb.dto.User;
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
 
 
 import java.util.List;

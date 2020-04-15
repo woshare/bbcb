@@ -1,6 +1,6 @@
 package com.example.bbcb.mapper;
 
-import com.example.bbcb.entity.User;
+import com.example.bbcb.dto.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

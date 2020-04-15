@@ -1,7 +1,7 @@
 package com.example.bbcb.service.User;
 
 import com.example.bbcb.dao.UserDao;
-import com.example.bbcb.entity.User;
+import com.example.bbcb.dto.User;
 import com.example.bbcb.exception.BusinessExceptionStatusEnum;
 import com.example.bbcb.exception.CustomException;
 import com.example.bbcb.vo.Result;
@@ -55,7 +55,7 @@ public class UserLogin extends CommBase{
         }
         users.add(user);
         users.add(user);
-        log.info("weChatLogin objectId:{}, uid:{},uid:{},userName:{},passWord:{},phone:{},registerTime:{}",objectId,uid,user.getUid(),user.getUserName(),user.getPassWord(),user.getPhoneNumber(),user.getRegisterTime());
+        //log.info("weChatLogin objectId:{}, uid:{},uid:{},userName:{},passWord:{},phone:{},registerTime:{}",objectId,uid,user.getUid(),user.getUserName(),user.getPassWord(),user.getPhoneNumber(),user.getRegisterTime());
         result.setData(users);
 
         return result;

@@ -9,6 +9,7 @@ import com.example.bbcb.service.User.UserInformation;
 import com.example.bbcb.service.User.UserLogin;
 import com.example.bbcb.vo.LoginReq;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -60,9 +61,13 @@ public class UserController {
             return userLogin.weChatLogin(uid);
     }
 
+    @ApiOperation(value = "登录接口")
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public Result login(@Validated @RequestBody LoginReq req) throws CustomException {
         log.info("login:{}", req.toString());
+//        String str=null;
+//        log.info("str:{}", str.toString());
+//        throw new CustomException(BusinessExceptionStatusEnum.ServerError);
         return Result.successResult();
     }
 }

@@ -1,5 +1,7 @@
 package com.example.bbcb.exception;
 
+import com.alibaba.fastjson.JSON;
+import com.example.bbcb.entity.WebLog;
 import com.example.bbcb.vo.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.ObjectError;
@@ -29,8 +31,18 @@ public class GlobalExceptionHandler {
             //获取校验的信息
             errMsg.append(error.getDefaultMessage()).append(",");
         }
-        Result result = new Result(BusinessExceptionStatusEnum.ParametersWrongError, errMsg.toString());
+        Result result = new Result(BusinessExceptionStatusEnum.ParametersWrongError, errMsg.toString().substring(0,errMsg.toString().length()-1));
         log.error("code:{},msg:{}", result.getCode(), result.getMsg());
+        int stackTraceSize=mex.getStackTrace().length;
+        String declareClass=mex.getStackTrace()[0].getClassName();
+        String fileName=mex.getStackTrace()[0].getFileName();
+        String methodName=mex.getStackTrace()[0].getMethodName();
+        int lineNumber=mex.getStackTrace()[0].getLineNumber();
+        System.out.println("stackTraceSize:"+stackTraceSize+",declareClass:"+declareClass+",fileName:"+fileName+",methodName:"+methodName+",lineNumber:"+lineNumber);
+        int stackTraceNum=0;
+        for(StackTraceElement stackTraceElement:mex.getStackTrace()){
+            System.out.println("stackTraceNum:"+stackTraceNum+++",declareClass:"+stackTraceElement.getClassName()+",fileName:"+stackTraceElement.getFileName()+",methodName:"+stackTraceElement.getMethodName()+",lineNumber:"+stackTraceElement.getLineNumber());
+        }
         return result;
     }
 
@@ -41,8 +53,19 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(value = Exception.class)
     public Result handleException(Exception ex) {
-        Result result = new Result(BusinessExceptionStatusEnum.UnkownExceptionError, ex.getMessage() + "-" + ex.getCause() + "-" + ex.getStackTrace());
+        Result result = new Result(BusinessExceptionStatusEnum.UnkownExceptionError, ex.getMessage() + "-" + ex.getCause());
         log.error("code:{},msg:{}", result.getCode(), result.getMsg());
+        int stackTraceSize=ex.getStackTrace().length;
+        String declareClass=ex.getStackTrace()[0].getClassName();
+        String fileName=ex.getStackTrace()[0].getFileName();
+        String methodName=ex.getStackTrace()[0].getMethodName();
+        int lineNumber=ex.getStackTrace()[0].getLineNumber();
+        System.out.println("stackTraceSize:"+stackTraceSize+",declareClass:"+declareClass+",fileName:"+fileName+",methodName:"+methodName+",lineNumber:"+lineNumber);
+        int stackTraceNum=0;
+        for(StackTraceElement stackTraceElement:ex.getStackTrace()){
+            System.out.println("stackTraceNum:"+stackTraceNum+++",declareClass:"+stackTraceElement.getClassName()+",fileName:"+stackTraceElement.getFileName()+",methodName:"+stackTraceElement.getMethodName()+",lineNumber:"+stackTraceElement.getLineNumber());
+        }
+
         return result;
     }
 
@@ -54,7 +77,27 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = CustomException.class)
     public Result handleCustomException(CustomException cex) {
         Result result = new Result(cex);
-        log.error("code:{},msg:{}", result.getCode(), result.getMsg());
+        String resultMsg=result.getMsg();
+        WebLog webLog=cex.getWebLog();
+        if(webLog!=null){
+            resultMsg=result.getMsg()+"(wid:"+cex.getWebLog().getWid()+")";
+        }else{//会出现，没有被aop around捕获的自定义异常吗？
+            webLog=new WebLog();
+            webLog.setStackTraceElement(cex.getStackTrace()[0]);
+            webLog.setUsername("uid");
+            String cause=""+cex.getCause();
+            String message=cex.getMessage();
+            webLog.setExceptionCause(cause);
+            webLog.setExceptionMessage(message);
+        }
+        result.setMsg(resultMsg);
+        webLog.setRspResult(result);
+        long endTime = System.currentTimeMillis();
+        webLog.setEndTime(endTime);
+        webLog.setSpendTime(endTime-webLog.getStartTime());
+        String webLogJson= JSON.toJSONString(webLog);
+        log.error("web customException:{}",webLogJson);
+        System.out.println("web customException:"+webLogJson);
         return result;
     }
 }
