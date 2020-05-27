@@ -1,6 +1,6 @@
 package com.example.bbcb.entity;
 
-import lombok.Data;
+import lombok.*;
 
 /**
  * 构想：用一个统一的对象，记录一次请求的日志数据，便于定位问题
@@ -14,11 +14,15 @@ import lombok.Data;
  * 4，在全局自定义异常捕获的方法中，打印这个日志，并把这个日志的id，添加到应答数据rsp中
  */
 @Data
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class WebLog {
     /**
      * 标注一个日志唯一记录
      */
-    private String wid;
+    private  String wid;
 
     /**
      * 操作用户,比如uid，后期再不断完善，比如加一个字段记录deviceid之类的
@@ -97,13 +101,14 @@ public class WebLog {
     private String exceptionCause;
     /**
      *异常信息
-     * 取代了如上四个元素
+     *
      */
     private String exceptionMessage;
 
     /**
      * 异常栈信息
      * 通常ex.getStackTrace()[0]，是指业务中报错的地方异常栈
+     *  取代了如上四个元素
      */
     StackTraceElement stackTraceElement;
 

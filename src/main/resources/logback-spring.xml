@@ -90,7 +90,7 @@
         <appender-ref ref="ERROR_FILE" />
     </root>
 
-    <logger name="com.example.demo3.mapper" level="DEBUG" additivity="true">
+    <logger name="com.example.bbcb.mapper" level="DEBUG" additivity="true">
     </logger>
 
 </configuration>

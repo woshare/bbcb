@@ -1,7 +1,9 @@
 package com.example.bbcb;
 
+import com.alibaba.fastjson.parser.ParserConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -19,6 +21,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @EnableScheduling
 @SpringBootApplication
+@ServletComponentScan
 public class BbcbApplication {
 
     public static void main(String[] args) {

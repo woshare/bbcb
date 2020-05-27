@@ -19,11 +19,15 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.validation.Valid;
 
+/**
+ * @Author
+ */
 @Slf4j
 @Api(value = "/user", description = "用户登陆、短信验证码")
 @RestController
 @RequestMapping("/user")
 public class UserController {
+
 
 
     @Resource
@@ -65,6 +69,14 @@ public class UserController {
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public Result login(@Validated @RequestBody LoginReq req) throws CustomException {
         log.info("login:{}", req.toString());
+        long current=System.currentTimeMillis();
+        long endTime=current+10000;
+        if(req.getNickName().equals("111")){
+            do{
+                current=System.currentTimeMillis();
+           }while(current<endTime);
+            return Result.successResult();
+        }
 //        String str=null;
 //        log.info("str:{}", str.toString());
 //        throw new CustomException(BusinessExceptionStatusEnum.ServerError);

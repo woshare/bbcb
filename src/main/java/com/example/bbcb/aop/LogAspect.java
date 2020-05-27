@@ -42,6 +42,11 @@ public class LogAspect {
      * 这个类，只会实例化一次，其中的属性元素是贡献的
      * 所以不太适合@Before和@After，需要用@Around
      */
+    /**
+     * 1,一个基于会话层的日志对象用户记录，一个请求回话的日志，是很利于后期定位问题的
+     * 2，目前有两种想法实现，一种是通过自定义异常类，通过抛出异常，在全局异常捕获的地方，获取，并进一步记录信息，达到一个回话的局部对象，在全局可以使用
+     *3，第二种是通过HttpServletRequest，这个应该是会话层对象，每个请求都有一个这个对象，经测试，不会在两个请求之间混淆数据
+     * /
 
     /**
      * 业务实现类的aop切入点
@@ -61,8 +66,31 @@ public class LogAspect {
     public void CustomExceptionLog(){}//
 
     //@Before("serviceLog()")
-    //@AfterReturning(returning="result",pointcut = "serviceLog()")
+    public void logBefore(JoinPoint joinPoint){
+        RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
+        HttpServletRequest request = ((ServletRequestAttributes)requestAttributes).getRequest();
 
+        WebLog webLog=new WebLog();
+        String wid=UUID.randomUUID().toString();
+        webLog.setWid(wid);
+        Signature signature = joinPoint.getSignature();
+        MethodSignature methodSignature = (MethodSignature) signature;
+        Method method = methodSignature.getMethod();
+        webLog.setReqParameter(getParameter(method, joinPoint.getArgs()));
+        System.out.println("RemoteHost:"+request.getRemoteHost()+"logBefore weblog:"+webLog.toString());
+        request.setAttribute("weblog",webLog);
+    }
+    //@AfterReturning(returning="result",pointcut = "serviceLog()")
+    public void logAfter(JoinPoint joinPoint,Object result){
+        RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
+        HttpServletRequest request = ((ServletRequestAttributes)requestAttributes).getRequest();
+        WebLog webLog=(WebLog) request.getAttribute("weblog");
+        if(webLog!=null){
+            System.out.println("request weblog:"+webLog.toString());
+        }else{
+            System.out.println("request weblog null");
+        }
+    }
     @AfterReturning(returning="result",pointcut = "ArgumentNotValidExceptionLog()")
     public void logArgumentNotValidExceptionHandleAfterReturning(JoinPoint joinPoint,Object result){
         RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
