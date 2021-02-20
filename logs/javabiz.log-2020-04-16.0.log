@@ -1,0 +1,154 @@
+2020-04-16 16:39:21.586 INFO  [restartedMain] com.example.bbcb.BbcbApplication StartupInfoLogger.java 50 logStarting - Starting BbcbApplication on DESKTOP-9T0BT4V with PID 28496 (D:\codeLearn\codeLearnGit\bbcb\target\classes started by 59578 in D:\codeLearn\codeLearnGit\bbcb)
+2020-04-16 16:39:21.586 INFO  [restartedMain] com.example.bbcb.BbcbApplication SpringApplication.java 652 logStartupProfileInfo - The following profiles are active: test
+2020-04-16 16:39:21.633 WARN  [background-preinit] o.s.h.converter.json.Jackson2ObjectMapperBuilder CompositeLog.java 127 warn - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-04-16 16:39:21.648 INFO  [restartedMain] o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor DeferredLog.java 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-16 16:39:21.648 INFO  [restartedMain] o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor DeferredLog.java 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-16 16:39:23.123 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 244 multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-16 16:39:23.124 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 126 registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-16 16:39:23.140 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 182 registerRepositoriesIn - Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2020-04-16 16:39:23.151 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 244 multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-16 16:39:23.152 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 126 registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-16 16:39:23.164 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 182 registerRepositoriesIn - Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2020-04-16 16:39:23.516 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker PostProcessorRegistrationDelegate.java 330 postProcessAfterInitialization - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$3dabc2c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-16 16:39:23.579 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker PostProcessorRegistrationDelegate.java 330 postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$69f9b141] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-16 16:39:24.009 INFO  [restartedMain] o.s.boot.web.embedded.tomcat.TomcatWebServer TomcatWebServer.java 90 initialize - Tomcat initialized with port(s): 9090 (http)
+2020-04-16 16:39:24.025 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol DirectJDKLog.java 173 log - Initializing ProtocolHandler ["http-nio-9090"]
+2020-04-16 16:39:24.040 INFO  [restartedMain] org.apache.catalina.core.StandardService DirectJDKLog.java 173 log - Starting service [Tomcat]
+2020-04-16 16:39:24.040 INFO  [restartedMain] org.apache.catalina.core.StandardEngine DirectJDKLog.java 173 log - Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-04-16 16:39:24.134 INFO  [restartedMain] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] DirectJDKLog.java 173 log - Initializing Spring embedded WebApplicationContext
+2020-04-16 16:39:24.134 INFO  [restartedMain] org.springframework.web.context.ContextLoader ServletWebServerApplicationContext.java 284 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2486 ms
+2020-04-16 16:39:24.181 INFO  [restartedMain] o.s.boot.web.servlet.RegistrationBean DynamicRegistrationBean.java 110 register - Filter UGCContentsFilter was not registered (possibly already registered?)
+2020-04-16 16:39:24.884 INFO  [restartedMain] o.s.scheduling.concurrent.ThreadPoolTaskExecutor ExecutorConfigurationSupport.java 171 initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 16:39:24.946 INFO  [restartedMain] o.s.b.d.autoconfigure.OptionalLiveReloadServer OptionalLiveReloadServer.java 57 startServer - LiveReload server is running on port 35729
+2020-04-16 16:39:25.884 INFO  [restartedMain] org.quartz.impl.StdSchedulerFactory StdSchedulerFactory.java 1208 instantiate - Using default implementation for ThreadExecutor
+2020-04-16 16:39:25.899 INFO  [restartedMain] org.quartz.core.SchedulerSignalerImpl SchedulerSignalerImpl.java 61 <init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-04-16 16:39:25.899 INFO  [restartedMain] org.quartz.core.QuartzScheduler QuartzScheduler.java 229 <init> - Quartz Scheduler v.2.3.1 created.
+2020-04-16 16:39:25.899 INFO  [restartedMain] org.quartz.simpl.RAMJobStore RAMJobStore.java 155 initialize - RAMJobStore initialized.
+2020-04-16 16:39:25.899 INFO  [restartedMain] org.quartz.core.QuartzScheduler QuartzScheduler.java 294 initialize - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-04-16 16:39:25.899 INFO  [restartedMain] org.quartz.impl.StdSchedulerFactory StdSchedulerFactory.java 1362 instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-04-16 16:39:25.899 INFO  [restartedMain] org.quartz.impl.StdSchedulerFactory StdSchedulerFactory.java 1366 instantiate - Quartz scheduler version: 2.3.1
+2020-04-16 16:39:25.899 INFO  [restartedMain] org.quartz.core.QuartzScheduler QuartzScheduler.java 2293 setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4088f2ff
+2020-04-16 16:39:25.931 INFO  [restartedMain] o.s.scheduling.concurrent.ThreadPoolTaskScheduler ExecutorConfigurationSupport.java 171 initialize - Initializing ExecutorService 'taskScheduler'
+2020-04-16 16:39:26.055 INFO  [restartedMain] s.d.s.web.plugins.DocumentationPluginsBootstrapper DocumentationPluginsBootstrapper.java 120 start - Context refreshed
+2020-04-16 16:39:26.071 INFO  [restartedMain] s.d.s.web.plugins.DocumentationPluginsBootstrapper DocumentationPluginsBootstrapper.java 123 start - Found 1 custom documentation plugin(s)
+2020-04-16 16:39:26.087 INFO  [restartedMain] s.d.spring.web.scanners.ApiListingReferenceScanner ApiListingReferenceScanner.java 44 scan - Scanning for api listing references
+2020-04-16 16:39:26.196 INFO  [restartedMain] o.s.scheduling.quartz.SchedulerFactoryBean SchedulerFactoryBean.java 726 startScheduler - Starting Quartz Scheduler now
+2020-04-16 16:39:26.196 INFO  [restartedMain] org.quartz.core.QuartzScheduler QuartzScheduler.java 547 start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-04-16 16:39:26.212 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol DirectJDKLog.java 173 log - Starting ProtocolHandler ["http-nio-9090"]
+2020-04-16 16:39:26.227 INFO  [restartedMain] o.s.boot.web.embedded.tomcat.TomcatWebServer TomcatWebServer.java 202 start - Tomcat started on port(s): 9090 (http) with context path ''
+2020-04-16 16:39:26.227 INFO  [restartedMain] com.example.bbcb.BbcbApplication StartupInfoLogger.java 59 logStarted - Started BbcbApplication in 5.204 seconds (JVM running for 6.659)
+2020-04-16 16:40:07.023 INFO  [http-nio-9090-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] DirectJDKLog.java 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-16 16:40:07.023 INFO  [http-nio-9090-exec-2] org.springframework.web.servlet.DispatcherServlet FrameworkServlet.java 524 initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-04-16 16:40:07.038 INFO  [http-nio-9090-exec-2] org.springframework.web.servlet.DispatcherServlet FrameworkServlet.java 546 initServletBean - Completed initialization in 15 ms
+2020-04-16 16:40:07.146 INFO  [http-nio-9090-exec-2] com.example.bbcb.controller.UserController UserController.java 67 login - login:LoginReq(nickName=111, password=222, phoneNumber=13221186695)
+2020-04-16 16:40:17.174 INFO  [http-nio-9090-exec-2] c.e.bbcb.interceptor.ProcessPerformanceInterceptor ProcessPerformanceInterceptor.java 46 afterCompletion - /user/login consume 10123 millis
+2020-04-16 16:41:00.728 INFO  [http-nio-9090-exec-3] com.example.bbcb.controller.UserController UserController.java 67 login - login:LoginReq(nickName=111, password=222, phoneNumber=13221186695)
+2020-04-16 16:41:07.614 INFO  [http-nio-9090-exec-5] com.example.bbcb.controller.UserController UserController.java 67 login - login:LoginReq(nickName=121, password=222, phoneNumber=13221186695)
+2020-04-16 16:41:10.734 INFO  [http-nio-9090-exec-3] c.e.bbcb.interceptor.ProcessPerformanceInterceptor ProcessPerformanceInterceptor.java 46 afterCompletion - /user/login consume 10008 millis
+2020-04-16 16:59:19.505 INFO  [restartedMain] com.example.bbcb.BbcbApplication StartupInfoLogger.java 50 logStarting - Starting BbcbApplication on DESKTOP-9T0BT4V with PID 16332 (D:\codeLearn\codeLearnGit\bbcb\target\classes started by 59578 in D:\codeLearn\codeLearnGit\bbcb)
+2020-04-16 16:59:19.505 INFO  [restartedMain] com.example.bbcb.BbcbApplication SpringApplication.java 652 logStartupProfileInfo - The following profiles are active: test
+2020-04-16 16:59:19.536 WARN  [background-preinit] o.s.h.converter.json.Jackson2ObjectMapperBuilder CompositeLog.java 127 warn - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-04-16 16:59:19.552 INFO  [restartedMain] o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor DeferredLog.java 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-16 16:59:19.552 INFO  [restartedMain] o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor DeferredLog.java 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-16 16:59:20.707 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 244 multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-16 16:59:20.707 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 126 registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-16 16:59:20.722 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 182 registerRepositoriesIn - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2020-04-16 16:59:20.738 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 244 multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-16 16:59:20.738 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 126 registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-16 16:59:20.754 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 182 registerRepositoriesIn - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2020-04-16 16:59:21.067 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker PostProcessorRegistrationDelegate.java 330 postProcessAfterInitialization - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$17c48da4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-16 16:59:21.134 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker PostProcessorRegistrationDelegate.java 330 postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$44127c21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-16 16:59:21.489 INFO  [restartedMain] o.s.boot.web.embedded.tomcat.TomcatWebServer TomcatWebServer.java 90 initialize - Tomcat initialized with port(s): 9090 (http)
+2020-04-16 16:59:21.504 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol DirectJDKLog.java 173 log - Initializing ProtocolHandler ["http-nio-9090"]
+2020-04-16 16:59:21.504 INFO  [restartedMain] org.apache.catalina.core.StandardService DirectJDKLog.java 173 log - Starting service [Tomcat]
+2020-04-16 16:59:21.504 INFO  [restartedMain] org.apache.catalina.core.StandardEngine DirectJDKLog.java 173 log - Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-04-16 16:59:21.598 INFO  [restartedMain] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] DirectJDKLog.java 173 log - Initializing Spring embedded WebApplicationContext
+2020-04-16 16:59:21.598 INFO  [restartedMain] org.springframework.web.context.ContextLoader ServletWebServerApplicationContext.java 284 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2046 ms
+2020-04-16 16:59:21.644 INFO  [restartedMain] o.s.boot.web.servlet.RegistrationBean DynamicRegistrationBean.java 110 register - Filter UGCContentsFilter was not registered (possibly already registered?)
+2020-04-16 16:59:22.285 INFO  [restartedMain] o.s.scheduling.concurrent.ThreadPoolTaskExecutor ExecutorConfigurationSupport.java 171 initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 16:59:22.350 INFO  [restartedMain] o.s.b.d.autoconfigure.OptionalLiveReloadServer OptionalLiveReloadServer.java 57 startServer - LiveReload server is running on port 35729
+2020-04-16 16:59:23.083 INFO  [restartedMain] org.quartz.impl.StdSchedulerFactory StdSchedulerFactory.java 1208 instantiate - Using default implementation for ThreadExecutor
+2020-04-16 16:59:23.098 INFO  [restartedMain] org.quartz.core.SchedulerSignalerImpl SchedulerSignalerImpl.java 61 <init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-04-16 16:59:23.098 INFO  [restartedMain] org.quartz.core.QuartzScheduler QuartzScheduler.java 229 <init> - Quartz Scheduler v.2.3.1 created.
+2020-04-16 16:59:23.098 INFO  [restartedMain] org.quartz.simpl.RAMJobStore RAMJobStore.java 155 initialize - RAMJobStore initialized.
+2020-04-16 16:59:23.098 INFO  [restartedMain] org.quartz.core.QuartzScheduler QuartzScheduler.java 294 initialize - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-04-16 16:59:23.098 INFO  [restartedMain] org.quartz.impl.StdSchedulerFactory StdSchedulerFactory.java 1362 instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-04-16 16:59:23.098 INFO  [restartedMain] org.quartz.impl.StdSchedulerFactory StdSchedulerFactory.java 1366 instantiate - Quartz scheduler version: 2.3.1
+2020-04-16 16:59:23.098 INFO  [restartedMain] org.quartz.core.QuartzScheduler QuartzScheduler.java 2293 setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5d56c1d3
+2020-04-16 16:59:23.118 INFO  [restartedMain] o.s.scheduling.concurrent.ThreadPoolTaskScheduler ExecutorConfigurationSupport.java 171 initialize - Initializing ExecutorService 'taskScheduler'
+2020-04-16 16:59:23.223 INFO  [restartedMain] s.d.s.web.plugins.DocumentationPluginsBootstrapper DocumentationPluginsBootstrapper.java 120 start - Context refreshed
+2020-04-16 16:59:23.223 INFO  [restartedMain] s.d.s.web.plugins.DocumentationPluginsBootstrapper DocumentationPluginsBootstrapper.java 123 start - Found 1 custom documentation plugin(s)
+2020-04-16 16:59:23.238 INFO  [restartedMain] s.d.spring.web.scanners.ApiListingReferenceScanner ApiListingReferenceScanner.java 44 scan - Scanning for api listing references
+2020-04-16 16:59:23.360 INFO  [restartedMain] o.s.scheduling.quartz.SchedulerFactoryBean SchedulerFactoryBean.java 726 startScheduler - Starting Quartz Scheduler now
+2020-04-16 16:59:23.360 INFO  [restartedMain] org.quartz.core.QuartzScheduler QuartzScheduler.java 547 start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-04-16 16:59:23.370 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol DirectJDKLog.java 173 log - Starting ProtocolHandler ["http-nio-9090"]
+2020-04-16 16:59:23.380 INFO  [restartedMain] o.s.boot.web.embedded.tomcat.TomcatWebServer TomcatWebServer.java 202 start - Tomcat started on port(s): 9090 (http) with context path ''
+2020-04-16 16:59:23.380 INFO  [restartedMain] com.example.bbcb.BbcbApplication StartupInfoLogger.java 59 logStarted - Started BbcbApplication in 4.391 seconds (JVM running for 5.764)
+2020-04-16 16:59:29.025 INFO  [http-nio-9090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] DirectJDKLog.java 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-16 16:59:29.026 INFO  [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet FrameworkServlet.java 524 initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-04-16 16:59:29.040 INFO  [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet FrameworkServlet.java 546 initServletBean - Completed initialization in 14 ms
+2020-04-16 16:59:29.137 INFO  [http-nio-9090-exec-1] com.example.bbcb.controller.UserController UserController.java 67 login - login:LoginReq(nickName=121, password=222, phoneNumber=13221186695)
+2020-04-16 17:00:05.813 INFO  [restartedMain] com.example.bbcb.BbcbApplication StartupInfoLogger.java 50 logStarting - Starting BbcbApplication on DESKTOP-9T0BT4V with PID 35844 (D:\codeLearn\codeLearnGit\bbcb\target\classes started by 59578 in D:\codeLearn\codeLearnGit\bbcb)
+2020-04-16 17:00:05.813 INFO  [restartedMain] com.example.bbcb.BbcbApplication SpringApplication.java 652 logStartupProfileInfo - The following profiles are active: test
+2020-04-16 17:00:05.844 WARN  [background-preinit] o.s.h.converter.json.Jackson2ObjectMapperBuilder CompositeLog.java 127 warn - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-04-16 17:00:05.859 INFO  [restartedMain] o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor DeferredLog.java 225 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-16 17:00:05.859 INFO  [restartedMain] o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor DeferredLog.java 225 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-16 17:00:07.000 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 244 multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-16 17:00:07.000 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 126 registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-16 17:00:07.015 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 182 registerRepositoriesIn - Finished Spring Data repository scanning in 0ms. Found 0 repository interfaces.
+2020-04-16 17:00:07.031 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 244 multipleStoresDetected - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-16 17:00:07.031 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 126 registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-16 17:00:07.047 INFO  [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate RepositoryConfigurationDelegate.java 182 registerRepositoriesIn - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2020-04-16 17:00:07.343 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker PostProcessorRegistrationDelegate.java 330 postProcessAfterInitialization - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$47927e81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-16 17:00:07.406 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker PostProcessorRegistrationDelegate.java 330 postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$73e06cfe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-16 17:00:07.796 INFO  [restartedMain] o.s.boot.web.embedded.tomcat.TomcatWebServer TomcatWebServer.java 90 initialize - Tomcat initialized with port(s): 9090 (http)
+2020-04-16 17:00:07.796 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol DirectJDKLog.java 173 log - Initializing ProtocolHandler ["http-nio-9090"]
+2020-04-16 17:00:07.812 INFO  [restartedMain] org.apache.catalina.core.StandardService DirectJDKLog.java 173 log - Starting service [Tomcat]
+2020-04-16 17:00:07.812 INFO  [restartedMain] org.apache.catalina.core.StandardEngine DirectJDKLog.java 173 log - Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-04-16 17:00:07.906 INFO  [restartedMain] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] DirectJDKLog.java 173 log - Initializing Spring embedded WebApplicationContext
+2020-04-16 17:00:07.906 INFO  [restartedMain] org.springframework.web.context.ContextLoader ServletWebServerApplicationContext.java 284 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2031 ms
+2020-04-16 17:00:07.953 INFO  [restartedMain] o.s.boot.web.servlet.RegistrationBean DynamicRegistrationBean.java 110 register - Filter UGCContentsFilter was not registered (possibly already registered?)
+2020-04-16 17:00:08.562 INFO  [restartedMain] o.s.scheduling.concurrent.ThreadPoolTaskExecutor ExecutorConfigurationSupport.java 171 initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 17:00:08.624 INFO  [restartedMain] o.s.b.d.autoconfigure.OptionalLiveReloadServer OptionalLiveReloadServer.java 57 startServer - LiveReload server is running on port 35729
+2020-04-16 17:00:09.520 INFO  [restartedMain] org.quartz.impl.StdSchedulerFactory StdSchedulerFactory.java 1208 instantiate - Using default implementation for ThreadExecutor
+2020-04-16 17:00:09.520 INFO  [restartedMain] org.quartz.core.SchedulerSignalerImpl SchedulerSignalerImpl.java 61 <init> - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-04-16 17:00:09.520 INFO  [restartedMain] org.quartz.core.QuartzScheduler QuartzScheduler.java 229 <init> - Quartz Scheduler v.2.3.1 created.
+2020-04-16 17:00:09.520 INFO  [restartedMain] org.quartz.simpl.RAMJobStore RAMJobStore.java 155 initialize - RAMJobStore initialized.
+2020-04-16 17:00:09.520 INFO  [restartedMain] org.quartz.core.QuartzScheduler QuartzScheduler.java 294 initialize - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-04-16 17:00:09.520 INFO  [restartedMain] org.quartz.impl.StdSchedulerFactory StdSchedulerFactory.java 1362 instantiate - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-04-16 17:00:09.520 INFO  [restartedMain] org.quartz.impl.StdSchedulerFactory StdSchedulerFactory.java 1366 instantiate - Quartz scheduler version: 2.3.1
+2020-04-16 17:00:09.520 INFO  [restartedMain] org.quartz.core.QuartzScheduler QuartzScheduler.java 2293 setJobFactory - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4143c4f6
+2020-04-16 17:00:09.551 INFO  [restartedMain] o.s.scheduling.concurrent.ThreadPoolTaskScheduler ExecutorConfigurationSupport.java 171 initialize - Initializing ExecutorService 'taskScheduler'
+2020-04-16 17:00:09.660 INFO  [restartedMain] s.d.s.web.plugins.DocumentationPluginsBootstrapper DocumentationPluginsBootstrapper.java 120 start - Context refreshed
+2020-04-16 17:00:09.676 INFO  [restartedMain] s.d.s.web.plugins.DocumentationPluginsBootstrapper DocumentationPluginsBootstrapper.java 123 start - Found 1 custom documentation plugin(s)
+2020-04-16 17:00:09.676 INFO  [restartedMain] s.d.spring.web.scanners.ApiListingReferenceScanner ApiListingReferenceScanner.java 44 scan - Scanning for api listing references
+2020-04-16 17:00:09.785 INFO  [restartedMain] o.s.scheduling.quartz.SchedulerFactoryBean SchedulerFactoryBean.java 726 startScheduler - Starting Quartz Scheduler now
+2020-04-16 17:00:09.801 INFO  [restartedMain] org.quartz.core.QuartzScheduler QuartzScheduler.java 547 start - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-04-16 17:00:09.801 INFO  [restartedMain] org.apache.coyote.http11.Http11NioProtocol DirectJDKLog.java 173 log - Starting ProtocolHandler ["http-nio-9090"]
+2020-04-16 17:00:09.832 INFO  [restartedMain] o.s.boot.web.embedded.tomcat.TomcatWebServer TomcatWebServer.java 202 start - Tomcat started on port(s): 9090 (http) with context path ''
+2020-04-16 17:00:09.832 INFO  [restartedMain] com.example.bbcb.BbcbApplication StartupInfoLogger.java 59 logStarted - Started BbcbApplication in 4.457 seconds (JVM running for 5.9)
+2020-04-16 17:00:25.628 INFO  [http-nio-9090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] DirectJDKLog.java 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-16 17:00:25.629 INFO  [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet FrameworkServlet.java 524 initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-04-16 17:00:25.643 INFO  [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet FrameworkServlet.java 546 initServletBean - Completed initialization in 14 ms
+2020-04-16 17:00:25.738 INFO  [http-nio-9090-exec-1] com.example.bbcb.controller.UserController UserController.java 67 login - login:LoginReq(nickName=121, password=222, phoneNumber=13221186695)

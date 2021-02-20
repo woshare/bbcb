@@ -1,25 +1,15 @@
 package com.example.bbcb.aop;
 
 import com.example.bbcb.dao.UserDao;
-import com.example.bbcb.entity.User;
-import com.example.bbcb.exception.BusinessExceptionStatusEnum;
 import com.example.bbcb.exception.CustomException;
-import com.example.bbcb.model.Result;
-import com.example.bbcb.service.User.UserLogin;
+import com.example.bbcb.vo.Result;
 import lombok.extern.slf4j.Slf4j;
-import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-import org.springframework.web.context.request.RequestAttributes;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 @Aspect
 @Component
@@ -28,8 +18,7 @@ import java.util.Date;
 public class LoginAspect {
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-    @Autowired
-    private UserDao userDao;
+
 
 
     @Pointcut("execution(public * com.example.bbcb.service.User.UserLogin.*(..))")//切入点描述

@@ -1,0 +1,17 @@
+2020-04-14 14:34:20.223 ERROR [http-nio-9090-exec-1] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 33 handleArgumentNotValidException - code:403,msg:参数错误:电话号码错误
+2020-04-14 14:36:34.243 ERROR [http-nio-9090-exec-2] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 33 handleArgumentNotValidException - code:403,msg:参数错误:电话号码错误
+2020-04-14 14:40:21.579 ERROR [http-nio-9090-exec-2] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 33 handleArgumentNotValidException - code:403,msg:参数错误:电话号码错误
+2020-04-14 14:47:16.206 ERROR [http-nio-9090-exec-2] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 33 handleArgumentNotValidException - code:403,msg:参数错误:电话号码错误
+2020-04-14 14:47:28.966 ERROR [http-nio-9090-exec-1] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 33 handleArgumentNotValidException - code:403,msg:参数错误:电话号码错误
+2020-04-14 17:59:26.898 ERROR [http-nio-9090-exec-5] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 33 handleArgumentNotValidException - code:403,msg:参数错误:电话号码错误
+2020-04-14 18:12:50.692 ERROR [http-nio-9090-exec-1] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 33 handleArgumentNotValidException - code:403,msg:参数错误:电话号码错误
+2020-04-14 18:13:09.234 ERROR [http-nio-9090-exec-1] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 33 handleArgumentNotValidException - code:403,msg:参数错误:电话号码错误
+2020-04-14 18:17:58.573 ERROR [http-nio-9090-exec-1] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 33 handleArgumentNotValidException - code:403,msg:参数错误:电话号码错误
+2020-04-14 18:19:11.098 ERROR [http-nio-9090-exec-2] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 33 handleArgumentNotValidException - code:403,msg:参数错误:电话号码错误
+2020-04-14 19:07:47.921 ERROR [http-nio-9090-exec-3] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 33 handleArgumentNotValidException - code:403,msg:参数错误:电话号码错误
+2020-04-14 19:35:29.018 ERROR [http-nio-9090-exec-3] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 33 handleArgumentNotValidException - code:403,msg:参数错误:电话号码错误
+2020-04-14 19:36:21.012 ERROR [http-nio-9090-exec-6] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 33 handleArgumentNotValidException - code:403,msg:参数错误:电话号码错误
+2020-04-14 19:50:01.100 ERROR [http-nio-9090-exec-3] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 33 handleArgumentNotValidException - code:403,msg:参数错误:电话号码错误
+2020-04-14 19:51:39.259 ERROR [http-nio-9090-exec-1] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 45 handleException - code:6000,msg:未知错误:null-null-[Ljava.lang.StackTraceElement;@30cfa7d0
+2020-04-14 20:00:56.059 ERROR [http-nio-9090-exec-3] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 48 handleException - code:6000,msg:未知错误:null-null-[Ljava.lang.StackTraceElement;@622913c
+2020-04-14 20:04:10.889 ERROR [http-nio-9090-exec-2] com.example.bbcb.exception.GlobalExceptionHandler GlobalExceptionHandler.java 48 handleException - code:6000,msg:未知错误:null-null-[Ljava.lang.StackTraceElement;@7e1e4a2c

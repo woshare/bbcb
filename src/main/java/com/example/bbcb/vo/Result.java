@@ -1,10 +1,12 @@
-package com.example.bbcb.model;
+package com.example.bbcb.vo;
 
 import com.example.bbcb.exception.BusinessExceptionStatusEnum;
 import com.example.bbcb.exception.CustomException;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Result {
     //状态码
     private Integer code;

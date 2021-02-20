@@ -1,20 +1,16 @@
 package com.example.bbcb.service.User;
 
-import com.example.bbcb.annotation.Fruit;
 import com.example.bbcb.dao.UserDao;
-import com.example.bbcb.entity.User;
+import com.example.bbcb.dto.User;
 import com.example.bbcb.exception.BusinessExceptionStatusEnum;
 import com.example.bbcb.exception.CustomException;
-import com.example.bbcb.model.Result;
+import com.example.bbcb.vo.Result;
 import com.example.bbcb.service.CommBase;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.context.annotation.RequestScope;
 import org.springframework.web.context.annotation.SessionScope;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,7 +55,7 @@ public class UserLogin extends CommBase{
         }
         users.add(user);
         users.add(user);
-        log.info("weChatLogin objectId:{}, uid:{},uid:{},userName:{},passWord:{},phone:{},registerTime:{}",objectId,uid,user.getUid(),user.getUserName(),user.getPassWord(),user.getPhoneNumber(),user.getRegisterTime());
+        //log.info("weChatLogin objectId:{}, uid:{},uid:{},userName:{},passWord:{},phone:{},registerTime:{}",objectId,uid,user.getUid(),user.getUserName(),user.getPassWord(),user.getPhoneNumber(),user.getRegisterTime());
         result.setData(users);
 
         return result;
